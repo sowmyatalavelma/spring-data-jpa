@@ -1,0 +1,34 @@
+package com.cg.homeloan.entities;
+
+/**
+ * 
+ * @author VINAYA SREE
+ *
+ */
+
+public enum Status {
+	PENDING, APPROVED, WAITING_FOR_FINANCE_APPROVAL, WAITING_FOR_LAND_VERIFICATION_OFFICE_APPROVAL, REJECTED,
+	DOCUMENTS_NOT_UPLOADED, DOCUMENTS_UPLOADED;
+
+	public String getStatus() {
+		switch (this) {
+
+		case APPROVED:
+			return "APPROVED";
+		case WAITING_FOR_FINANCE_APPROVAL:
+			return "WAITING_FOR_FINANCE_APPROVAL";
+		case WAITING_FOR_LAND_VERIFICATION_OFFICE_APPROVAL:
+			return "WAITING_FOR_LAND_VERIFICATION_OFFICE_APPROVAL";
+		case REJECTED:
+			return "REJECTED";
+		case DOCUMENTS_UPLOADED:
+			return "DOCUMENTS_UPLOADED";
+		case DOCUMENTS_NOT_UPLOADED:
+			return "DOCUMENTS_NOT_UPLOADED";
+		default:
+			return "PENDING";
+		}
+
+	}
+
+}
